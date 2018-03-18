@@ -1,0 +1,285 @@
+/* 
+##################################################
+##################################################
+					Général
+##################################################
+##################################################
+*/		
+*{
+	margin: 0px;
+}
+h1{
+	
+	font-size: 15px;
+}
+h2{
+	padding: 20px 0;
+	font-family: 'Rokkitt', serif;
+	font-size: 2.5em;
+	color: #333;
+
+}
+h3{
+	
+	font-size: 25px;
+	font-family: 'Rokkitt', serif;
+	font-weight: lighter;
+	letter-spacing: -1px;
+
+}
+p{
+	font-size: 11px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.container{
+	
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* 
+##################################################
+##################################################
+					Classes génériques
+##################################################
+##################################################
+*/		
+
+.inline-b{
+	display: inline-block;
+}
+
+
+.left{
+	float: left;
+}
+.right{
+	float:right;
+	vertical-align: bottom;
+}
+
+/* 
+##################################################
+##################################################
+					HEADER
+##################################################
+##################################################
+*/		
+.image{
+	background-image: url(http://lorempicsum.com/futurama/1276/400/2);
+	width: 1276px;
+	height: 400px;
+}
+
+.top_header{
+	background-color: black;
+	display: inline-block;
+	width: 100%; 
+	align-content: center;
+	position: fixed;
+}
+.header_left{
+	display: inline-block;
+	float: left;
+	margin: 10px 0;
+}
+.header_right{
+	display: inline-block;
+	float: right;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.header_left h1, .header_left p{
+	display: inline-block;
+	color: white;
+
+}
+input[type=search] { 
+	width: 150px;
+	height: 15px;
+	background-color: black;  
+	text-align: right;
+	border: 1px solid black;
+	border-radius: 5px;
+	border-bottom-color: grey;
+	letter-spacing: 4px;        
+	text-shadow: 0 0 2px black;       
+	word-spacing: 20px;
+	color: white;               
+}
+.header_right a{
+	text-decoration: none;
+	color: grey;
+	font-family: arial, serif;
+	font-size: 10px;
+}
+.separateur{
+	color: grey;
+
+}
+.header_right .red{
+	color: red;
+	font-weight: bold;
+}
+.button {
+  background: #262626;
+  border-style: outset;
+  border-right: none;
+  border-bottom: none;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  
+  
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff !important;
+  font-size: 12px;
+  padding: 2px 3px 2px 3px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+/* 
+##################################################
+##################################################
+					NAV
+##################################################
+##################################################
+*/		
+nav{
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Rokkitt', serif;
+	font-weight: 900;
+
+}
+nav a{
+	text-decoration: none;
+	font-size: 25px;
+	padding: 0px 20px 0px 20px;
+	color: grey;
+
+}
+nav .active{
+	color: black;
+	padding-left: 0;
+}
+
+/* 
+##################################################
+##################################################
+					Header article
+##################################################
+##################################################
+*/		
+.circle{
+	padding: 10px;
+	border-radius: 100%;
+	border : 1px solid black;
+}
+.social{
+	padding: 10px 20px;
+	color: white;
+
+}
+.facebook{
+	background-color: #3b5998;
+}
+.twitter{
+	background-color: #4d4dff;
+}
+.google{
+	background-color: red;
+}
+.soustitre{
+	height: 29px;
+}
+
+/* 
+##################################################
+##################################################
+					Résumé	
+##################################################
+##################################################
+*/		
+.resume p{
+	font-size: 20px;
+	padding: 20px 0;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	margin: 20px 0;
+}
+
+/* 
+##################################################
+##################################################
+				Contenu
+##################################################
+##################################################
+*/		
+aside{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+.content{
+	display: inline-block;
+	width: 70%;
+	margin-right: 0;
+	text-align: right;
+
+}
+.content p{
+	font-size: 14px;
+}
+.contenu{
+	display: flex;
+	justify-content: space-between;
+
+}
+.auteur{
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100%;
+
+}
+	
+/* 
+##################################################
+##################################################
+					Footer	
+##################################################
+##################################################
+*/		
+.fin{
+	display: flex;
+	justify-content: space-between;
+	
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #302f30);
+  background-image: -moz-linear-gradient(top, #000000, #302f30);
+  background-image: -ms-linear-gradient(top, #000000, #302f30);
+  background-image: -o-linear-gradient(top, #000000, #302f30);
+  background-image: linear-gradient(to bottom, #000000, #302f30);
+	color: white;
+}
+.tier{
+	width: 30%;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.b-left{
+	border-left: 1px solid black;
+}
+.fin a{
+	color: white;
+	font-size: 10px;
+}
+.partenaires{
+	background-color: lightgrey;
+	height: 30px;
+	color: #666;
+}
