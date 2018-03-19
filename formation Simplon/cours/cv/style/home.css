@@ -1,0 +1,39 @@
+article {font-size:1em;}
+article:last-child{margin-bottom:0;}
+
+.button {font-size:0.8em !important;}
+
+#photo {margin-right:10px;max-height:360px;}
+#quote {margin-top:70px;}
+#quote h1 {line-height:37px;}
+#quote .icon{font-size:1em;}
+#quote blockquote{text-align:justify;margin-top:30px;padding-top:5px;padding-bottom:5px;}
+#quote cite{margin-top:10px;}
+
+@media (min-width:980px) and (max-width:1200px){
+	.button {font-size:0.9em !important;}
+	
+	article{font-size:0.9em;}
+	
+	#quote {margin-top:50px;}
+	#quote blockquote {font-size:0.96em;}
+}
+
+@media (min-width:768px) and (max-width:979px){
+	h1 {font-size:1.4em;}
+	article{width:384px !important;margin:10px 0;}
+	
+	#quote {margin-top:20px;}
+	#quote blockquote {font-size:0.85em;margin-top:24px;}
+}
+
+@media (max-width:767px){
+	article {max-width:480px;float:none !important;margin:0 auto;margin-bottom:30px;}
+	
+	#photo {display:block;margin:0 auto;width:400px;}
+	#quote {margin-top:0px;}
+	#quote h1 {line-height:32px;}
+	#quote blockquote {border-left:none;font-size:0.8em;max-width:480px;margin:0 auto;margin-bottom:10px;text-align:center;}
+	#quote cite {display:none;}
+	#quote .icon {font-size:1em;}
+}
