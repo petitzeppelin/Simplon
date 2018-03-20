@@ -7,13 +7,19 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="CSS/style.css">  <!-- CSS -->
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Michaël Duputel</h1>
-		<h2>CV Developpeur Web</h2>
+		<h2>CV Developpeur Web <span id="typed"></span></h2>
 	</header>
+	<div id="typed-strings">
+    	<p><strong>Junior</strong></p>
+    	<p><strong>Front-end</strong></p>
+   		<p><strong>Back-end</strong></p>
+	</div>
 	<nav>
 		<ul>
 			<li><a href="#">Présentation</a></li>
@@ -40,6 +46,8 @@
 				</div>
 			</div>
 		</section>
+
+
 		<section id="Compétences">
 			<h3>Mes compétences</h3>
 			<h4>En évolution constante par auto-formation</h4>
@@ -122,6 +130,14 @@
 
 	</footer>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="script.js"></script> <!-- JS -->
+	<script src="JS/typed.js"></script> <!-- JS -->
+	<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    loop: true ,
+    typeSpeed: 100,
+    backSpeed: 60
+  });
+</script>
 </body>
 </html>
