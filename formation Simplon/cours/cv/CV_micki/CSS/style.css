@@ -1,3 +1,25 @@
+/* 
+##################################################
+##################################################
+					Importations
+##################################################
+##################################################
+*/		
+@import url("components/timeline.css");
+@import url("components/nav.css");
+@import url("components/avatar.css");
+@import url("components/thumbnail.css");
+@import url("components/form.css");
+@import url("components/button.css");
+
+
+/* 
+##################################################
+##################################################
+					RESET
+##################################################
+##################################################
+*/		
 *{
 	margin:0;
 	padding: 0;
@@ -5,25 +27,31 @@
 	list-style: none;
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
+
+/* 
+##################################################
+##################################################
+					Structure
+##################################################
+##################################################
+*/		
 header{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #2980b9;
+	background-color: #34495E;
 	height: 200px;
 	text-align: center;
 	width: 100%;
+	
 }
 h1, h2, a{
 	
 	color: white;
 	
 }
-nav a:hover{
-	text-decoration: none;
-	color: #f1f2f6;
-}
+
 h1{
 	font-size: 2.3em;
 	border-bottom: 1px solid white;
@@ -33,7 +61,7 @@ h2{
 }
 h3{
 	font-size: 2em;
-	margin: 
+	
 	color: #2f3542
 }
 h4{
@@ -45,34 +73,22 @@ h4{
 h5{
 	font-size: 1.2em;
 }
-nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #0c2461;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-
-}
-ul{
-	display: flex;
-}
-li{
-	padding:15px 20px;
-	font-size: 1.5em;
-
-}
 section{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	min-height: 70vh;
+}
+section:nth-child(even){
+	background-color: #FFF;
+}
+section:nth-child(odd){
+	background-color: #E4F1FE;
+}
+.container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-bottom: 60px;
-}
-.container{
-	width: 80%;
-	margin: 0 auto;
 }
 #Presentation{
 	display: flex;
@@ -83,37 +99,22 @@ section{
 #identity{
 	display: flex;
 	justify-content: space-around;
-	padding-top: 60px;
-}
-#identity img {
 	
-	border-radius: 100%;
-
 }
+
 #identity p{
 	
 	color: #2f3542;
 }
-.comp{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	margin: 0 20px;
-	background-color: #f1f2f6;
-	border-radius: 10px; 
-}
-.comp img{
-	align-self: center;
-}
+
+
 .flex-cont{
 	display: flex;
 	justify-content: space-between;
+	padding-top: 20px;
 }
-.photo{
-	width: 200px;
-	height: 200px;
-
-	padding: 0;
+.active{
+	color: #f1f2f6;
+	background-color: #34495E;
+	border-radius: 10px;
 }
-

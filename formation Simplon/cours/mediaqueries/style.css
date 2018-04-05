@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	padding-bottom: 2em;
+}
+form{
+	border : 1px solid grey;
+	border-radius: 8px;
+	width: 80%;
+	margin: 2em auto;
+}
+.container{
+	padding-left: 1em;
+}
+
+
+.titre{
+	background-color: #f1f2f6;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border:1px solid #dfe4ea;
+	
+}
+#profil, #photo{
+	background-color: white ;
+}
+h2{
+	background-color: #f1f2f6 ;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 5px 0;
+
+}
+.none{
+	display: none;
+}
+input{
+	display: block;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+.radio input{
+	display: inline;
+}
+form input[type=text], form input[type=email]{
+	border-radius: 5px;
+	border: 1px solid grey;
+	height: 1.7em;
+	width: 70%;
+}
+img{
+	display: block;
+	margin: 1em auto;
+	min-width: 200px;
+}
+#img{
+
+}
+input[type=submit]{
+	padding:4px;
+	border-radius: 5px;
+	background-color: #74b9ff;
+	margin-left:80%;
+	
+}
+input[type=file]{
+	padding: 10px 0;
+	width: 99%;
+	border-top : 1px solid grey;
+	border-bottom : 1px solid grey;
+}
+legend{
+	display: none;
+}
+fieldset{
+	border-style: none;
+}
+/* 
+##################################################
+##################################################
+				ecran 640px +
+##################################################
+##################################################
+*/		
+
+@media (min-width: 640px) {
+	form{
+		display: inline-block;
+		margin: 0 2%;
+
+	}
+	#profil{
+		width: 60%;
+	}
+	#photo{
+		width: 30%;
+		vertical-align: top;
+	}
+	label{
+		display: inline-block;
+		width: 30%;
+		
+	}
+	.radio label{
+		width: auto;
+	}
+	.radio{
+		display: inline-block;
+	}
+	input{
+		display: inline-block;
+		
+	}
+	form input[type=text], form input[type=email]{
+	border-radius: 5px;
+	border: 1px solid grey;
+	height: 1.7em;
+	width: 20%;
+}
+
+}
+

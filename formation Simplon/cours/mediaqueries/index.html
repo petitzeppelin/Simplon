@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title> exo form </title>
+	<meta name="description" content="Description du site">
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<link rel="stylesheet" href="style.css">  <!-- CSS -->
+</head>
+<body>
+	<h1>Nouvel utilisateur</h1>
+
+
+	<form action="index.html" method="post" id="profil">
+		<fieldset>
+			<legend>Formulaire pour le profil</legend>
+		
+			<div class="container titre">
+			<h2>Profil</h2>
+			</div>
+			<div class="container">
+			<label for="nom1">Nom :</label>
+			<input type="text" name="nom1" id="nom1">
+			<label class="none" for="nom2">1</label>
+			<input type="text" name="nom2" id="nom2"><br>
+			<label for="sexe">Sexe :</label>
+			<select name="sexe" id="sexe">
+				<option value="H">Homme</option>
+				<option value="F">Femme</option>
+			</select><br>
+			<label for="date">Date de naissance :</label>
+			<input type="text" name="date" id="date" placeholder="jj/mm/aaaa"><br>
+			<label for="nationalite">Nationalité :</label>
+			<input type="text" name="nationalite" id="nationalite"><br>
+			<label for="adresse">Adresse :</label>
+			<input type="text" name="adresse" id="adresse"><br>
+			<label for="cp">CP :</label>
+			<input type="text" name="cp" id="cp"><br>
+			<label for="ville">Ville :</label>
+			<input type="text" name="ville" id="ville"><br>
+			<label for="qpv">QPV :</label>
+			<div class="radio">
+				<input type="radio" name="qpv" id="qpvo" value="oui">
+				<label for="qpvo">oui / </label>
+				<input type="radio" name="qpv" id="qpvn" value="non">
+				<label for="qpvn">non</label>
+			</div><br>
+			<label for="email">Email :</label>
+			<input type="email" name="email" id="email"><br>
+			<label for="tel">Telephone :</label>
+			<input type="text" name="tel" id="tel"><br>
+			<label for="status">Status :</label>
+			<input type="text" name="status" id="status"><br>
+			<label for="emploi">N° pole emploi :</label>
+			<input type="text" name="emploi" id="emploi"><br>
+			<label for="secu">N°Secu :</label>
+			<input type="text" name="secu" id="secu"><br>
+			</fieldset>
+			<input type="submit" value="Envoyer">
+		</div>
+		
+	</form>
+
+	<form id="photo">
+		<fieldset>
+			<legend>Formulaire pour la photo</legend>
+		<div class="container titre">
+			<h2>Photo</h2>
+		</div>
+		<div id="img">
+			<img alt="portrait" src="http://lorempicsum.com/futurama/200/200/1">
+		</div>
+		<label class="none" for="fichier">1</label>
+		<input type="file" name="fichier" id="fichier"><br>
+		</fieldset>
+		<input type="submit" value="Envoyer">
+
+	</form>
+
+
+
+	<!-- <script src="script.js"></script> --> <!-- JS -->
+</body>
+</html>

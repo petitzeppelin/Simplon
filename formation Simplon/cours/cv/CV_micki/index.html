@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title> TITRE A PRECISER </title>
+	<title> Michael Duputel </title>
 	<meta name="description" content="Description du site">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,92 +13,102 @@
 <body>
 	<header>
 		<h1>Michaël Duputel</h1>
-		<h2>CV Developpeur Web <span id="typed"></span></h2>
+		<h2>Developpeur Web <span id="typed"></span></h2>
 	</header>
 	<div id="typed-strings">
-    	<p><strong>Junior</strong></p>
-    	<p><strong>Front-end</strong></p>
-   		<p><strong>Back-end</strong></p>
+		<p><strong>Junior</strong></p>
+		<p><strong>Front-end</strong></p>
+		<p><strong>Back-end</strong></p>
 	</div>
-	<nav>
-		<ul>
-			<li><a href="#">Présentation</a></li>
-			<li><a href="#">Compétences</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Experiences Pro</a></li>
-			<li><a href="#">Loisirs</a></li>
-			<li><a href="#">Contact</a></li>
+	<nav data-gumshoe-header>
+		<ul data-gumshoe>
+			<li class="active"><a class="active" href="#Presentation">Présentation</a></li>
+			<li><a href="#Competences">Compétences</a></li>
+			<li><a href="#Portfolio">Portfolio</a></li>
+			<li><a href="#timeline">Experiences Pro</a></li>
+			<li><a href="#Loisirs">Loisirs</a></li>
+			<li><a href="#Contact">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="container">
-		<section id="Presentation">
+	
+	<section id="Presentation">
+		<div class="container">
 			<div id="identity" class="row">
-				<img src="moi1.jpg" class="col-md-3 photo">
+				<img src="moi1.jpg" class="col-md-3 avatar">
 				<div class="col-md-6">
 					<h3>Présentation</h3>
 					<h4> Qu'est ce qui fait que je suis qui je suis...</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Passionné d'informatique et de création, j'ai commencé à me former sur le développement web en autodidacte avec des sites comme codecademy, openclassroom ou encore freecodecamp. Je me suis ensuite perfectionné en intégrant une formation de développeur web proposée par Simplon. 
+					</p>
+					<p>D'un naturel curieux, je cherche constamment à développer de nouvelles compétences gràce à une formation perpétuelle en autodidacte et à aller plus loin que les notions abordées lors de ma formation.</p>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 
-		<section id="Compétences">
+	<section id="Competences">
+		<div class="container">
 			<h3>Mes compétences</h3>
 			<h4>En évolution constante par auto-formation</h4>
 			<div class="row flex-cont">
-				<div class="comp col-md-2">
-					<h5>Front-End</h5>
-					<img src="http://lorempicsum.com/futurama/100/100/6">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="thumb col-md-2">
+					<div class="thumb-head">
+						<h5>Front-End</h5>
+						<img src="front.jpg">
+					</div>
+					<div class="thumb-foot">
+						<p>HTML5</p>
+						<p>CSS3</p>
+						<p>Javascript</p>
+						<p>Photoshop</p>
+					</div>
 				</div>
-				<div class="comp col-md-2">
-					<h5>Back-End</h5>
-					<img src="http://lorempicsum.com/futurama/100/100/7">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="thumb col-md-2">
+					<div class="thumb-head">
+						<h5>Back-End</h5>
+						<img src="back.png">
+					</div>
+					<div class="thumb-foot">
+						<p>PHP</p>
+						<p>MYSQL</p>
+					</div>
 				</div>
-				<div class="comp col-md-2">
-					<h5>Frameworks</h5>
-					<img src="http://lorempicsum.com/futurama/100/100/7">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="thumb col-md-2">
+					<div class="thumb-head">
+						<h5>Frameworks</h5>
+						<img src="frame.png">
+					</div>
+					<div class="thumb-foot">
+						<p>Bootstrap</p>
+						<p>Foundation</p>
+						<p>Jquery</p>
+					</div>
 				</div>
-				<div class="comp col-md-2">
-					<h5>CMS</h5>
-					<img src="http://lorempicsum.com/futurama/100/100/7">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="thumb col-md-2">
+					<div class="thumb-head">
+						<h5>CMS</h5>
+						<img src="cms.png">
+					</div>
+					<div class="thumb-foot">
+						<p>Wordpress</p>
+						
+					</div>
 				</div>
 			</div>
-		</section>
-		<section id="Portfolio">
+		</div>
+	</section>
+	<section id="Portfolio">
+		<div class="container">
 			<h3>Mes réalisations</h3>
 			<h4>Réalisées dans le cadre d'une formation ou dans le cadre professionnel</h4>
 			<div class="row flex-cont">
-				<div class="comp col-md-3">
-					<h5>Site 1</h5>
-					<img src="http://lorempicsum.com/futurama/200/100/7">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="thumb col-md-3">
+					<h5>Site pour un toiletteur</h5>
+					<img src="site1b.png">
+					<p>Site réalisé en utilisant Bootstrap. Création d'un espace d'administration en php permettant de gérer le catalogue d'articles.</p>
 				</div>
-				<div class="comp col-md-3">
+				<div class="thumb col-md-3">
 					<h5>Site 2</h5>
 					<img src="http://lorempicsum.com/futurama/200/100/7">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -106,7 +116,7 @@
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.</p>
 				</div>
-				<div class="comp col-md-3">
+				<div class="thumb col-md-3">
 					<h5>Site 3</h5>
 					<img src="http://lorempicsum.com/futurama/200/100/7">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -115,29 +125,201 @@
 					consequat.</p>
 				</div>
 			</div>
-		</section>
-		<section id="Xppro">
+		</div>
+	</section>
 
-		</section>
-		<section id="Loisirs">
+	<section id=timeline>
+		<div class="container">
+			<h3>Mon parcours</h3>
+			<p class="leader">Ma vie, mon oeuvre...</p>
+			<div class="demo-card-wrapper">
+				<div class="demo-card demo-card--step1">
+					<div class="head">
+						<div class="number-box">
+							<span>2018</span>
+						</div>
+						<h2><span class="small">Formation</span> SIMPLON</h2>
+					</div>
+					<div class="body">
+						<p>Apprentissage des langages HTML, CSS, Javascript, PHP, SQL</p>
+						<p>Utilisation de Jquery, Bootstrap, Angular</p>
+						<p>Approfondissement de l'algorythmie</p>
+						<p>Développement de sites web responsives</p>
+						<p>Administration de bases de données</p>
+						<p>Réalisation de cahier des charges</p>
+						<p>Gestion d'un projet selon la méthode Scrum</p>
+					</div>
+				</div>
 
-		</section>
-		<section id="Contact">
+				<div class="demo-card demo-card--step4">
+					<div class="head">
+						<div class="number-box">
+							<span>2015/2017</span>
+						</div>
+						<h2><span class="small">Experience Pro</span> Pole Sécurité SNCF</h2>
+					</div>
+					<div class="body">
+						<p>Réalisation du Document Unique</p>
+						<p>Gestion des risques professionnels et psychosociaux</p>
+						<p>Evaluation des risques inondation</p>
+						<p>Création d'outils automatisés sous Excel pour la gestion de propriétés RH</p>
+						<p>Participation au concours de l'inovation : obtention du prix régional</p>
+						
+					</div>
+				</div>
 
-		</section>
-	</div>
+				<div class="demo-card demo-card--step1">
+					<div class="head">
+						<div class="number-box">
+							<span>2015/2017</span>
+						</div>
+						<h2><span class="small">Formation</span> Master GEDD</h2>
+					</div>
+					<div class="body">
+						<p>Formation à la gestion de projet CAPM</p>
+						<p>Formation au developpement durable</p>
+						<p>apprentissage des standards ISO 9001, 14001, 18001</p>
+						<p>Utilisation d'outils tels que Microsoft Project, QGIS, VBA sous Excel</p>
+						<p>Création d'une application mobile simple pour la gestion des accidents de personne</p>
+						
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step4">
+					<div class="head">
+						<div class="number-box">
+							<span>2009/2015</span>
+						</div>
+						<h2><span class="small">Experience Pro</span> Animateur Scientifique</h2>
+					</div>
+					<div class="body">
+						<p>Administration du site de l'association</p>
+						<p>Création d'animations pour divers publics afin de faire découvrir les insectes</p>
+						<p>Gestion d'une équipe d'animateurs autour de projets scientifiques</p>
+						<p>Organisation de stages de formation BAFA en tant que formateur</p>
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step1">
+					<div class="head">
+						<div class="number-box">
+							<span>2008</span>
+						</div>
+						<h2><span class="small">Formation</span> Maitrise Biologie Geologie</h2>
+					</div>
+					<div class="body">
+						<p>Apprentissage des fonctionnements des organismes vivants</p>
+						<p>Apprentissage du fonctionnement du systeme Terre</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="Loisirs">
+		<div class="container">
+			<h3>Mes loisirs</h3>
+			<p class="leader">A part coder, j'ai d'autres passions</p>
+
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+				<!-- Carousel indicators -->
+
+				<ol class="carousel-indicators">
+
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+
+				</ol>   
+
+				<!-- Wrapper for carousel items -->
+
+				<div class="carousel-inner">
+
+					<div class="item active">
+
+						<img src="http://lorempicsum.com/futurama/500/300/7" alt="First Slide">
+
+					</div>
+
+					<div class="item">
+
+						<img src="http://lorempicsum.com/futurama/500/300/8" alt="Second Slide">
+
+					</div>
+
+					<div class="item">
+
+						<img src="http://lorempicsum.com/futurama/500/300/5" alt="Third Slide">
+
+					</div>
+
+				</div>
+
+				<!-- Carousel controls -->
+
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+
+					<span class="glyphicon glyphicon-chevron-left"></span>
+
+				</a>
+
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">
+
+					<span class="glyphicon glyphicon-chevron-right"></span>
+
+				</a>
+
+			</div>
+
+
+		</div>
+	</section>
+	<section id="Contact">
+		<div class="container">
+			<h3>Me Contacter</h3>
+			<p class="leader">Si vous souhaitez me contacter, veuillez remplir le formulaire ci dessous</p>
+			<form class="form-contact">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Nom</span>
+					<input type="text" class="form-control" placeholder="Votre Nom" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Prénom</span>
+					<input type="text" class="form-control" placeholder="Votre Prénom" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Email</span>
+					<input type="email" class="form-control" placeholder="Votre email" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+					<textarea class="form-control" rows="3" cols="60">Votre message</textarea>
+				</div>
+				<button type="submit" class="btn btn-blue">Envoyer</button>
+			</form>
+		</div>
+	</section>
+	
 	<footer>
 
 	</footer>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script src="JS/typed.js"></script> <!-- JS -->
+	<script src="JS/gumshoe.js"></script>
 	<script>
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    loop: true ,
-    typeSpeed: 100,
-    backSpeed: 60
-  });
+		var typed = new Typed('#typed', {
+			stringsElement: '#typed-strings',
+			loop: true ,
+			typeSpeed: 100,
+			backSpeed: 60
+		});
+	</script>
+	<script>
+	gumshoe.init();
 </script>
 </body>
 </html>
